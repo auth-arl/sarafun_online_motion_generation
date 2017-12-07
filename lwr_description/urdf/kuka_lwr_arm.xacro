@@ -7,16 +7,16 @@
 
 
 
-  <property name="arm_elem_base_mass" value="2.0"/>
-  <property name="arm_elem_link_mass" value="2.0"/>
-  <property name="arm_elem_ball_link_mass" value="2.0"/>
-  <property name="arm_elem_end_link_mass" value="2.0"/>
-  <property name="safety_controller_k_pos" value="100" />
-  <property name="safety_controller_k_vel" value="2" />
-  <property name="joint_damping" value="2" /> <!-- It needs to be very high .. 40, 20-->
-  <property name="joint_friction" value="0.1" /> <!-- Not sure if that is used, apparently not ... 0.8? -->
-  <property name="arm_velocity_scale_factor" value="1"/> <!-- Not sure about that ... -->
-  <property name="mesh_path" value = "package://lwr_description/meshes" />
+  <xacro:property name="arm_elem_base_mass" value="2.0"/>
+  <xacro:property name="arm_elem_link_mass" value="2.0"/>
+  <xacro:property name="arm_elem_ball_link_mass" value="2.0"/>
+  <xacro:property name="arm_elem_end_link_mass" value="2.0"/>
+  <xacro:property name="safety_controller_k_pos" value="100" />
+  <xacro:property name="safety_controller_k_vel" value="2" />
+  <xacro:property name="joint_damping" value="2" /> <!-- It needs to be very high .. 40, 20-->
+  <xacro:property name="joint_friction" value="0.1" /> <!-- Not sure if that is used, apparently not ... 0.8? -->
+  <xacro:property name="arm_velocity_scale_factor" value="1"/> <!-- Not sure about that ... -->
+  <xacro:property name="mesh_path" value = "package://lwr_description/meshes" />
 
 <xacro:macro name="xtransmission" params="name id">
 	<transmission name="${name}_arm_${id}_trans">
